@@ -1,9 +1,9 @@
 package oop
 
 class Person(
-    val name: String = "",
-    val lastName: String = "",
-    val age: Int = 0
+    var name: String = "",
+    var lastname: String = "",
+    var age: Int = 0
 ){
 
 //    var name: String = ""
@@ -18,6 +18,6 @@ class Person(
 
 
     override fun toString(): String {
-        return "Person(name='$name', lastName='$lastName', age=$age)"
+        return "Person(name='$name', lastName='$lastname', age=$age)"
     }
 }
