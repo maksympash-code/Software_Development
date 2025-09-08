@@ -3,6 +3,6 @@ fun main() {
 //    val myNumber: Int = 5
 //    print("Planet name: $planetName $myNumber")
 
-    val someText: String = "I`m fine."
+    val someText = "I`m fine."
     print("Hello! " + "How are you? " + someText)
 }
