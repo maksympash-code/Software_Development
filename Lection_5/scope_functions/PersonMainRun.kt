@@ -1,0 +1,25 @@
+package scope_functions
+
+fun main() {
+    val person = Person()
+
+    with(person) {
+        name = "Egor"
+        lastName = "Ignatenko"
+        age = 20
+    }
+
+    val resultFromRun = run{
+        println(person.name)
+        println(person.lastName)
+        println(person.age)
+
+        // результатом лямбда функцію вважається результат останнього оператора у її тілі
+
+        "${person.name} ${person.lastName} ${person.age}" // результат лямбда функції з with
+    }
+
+    println("resultFromRun = $resultFromRun")
+
+//    println(person)
+}
